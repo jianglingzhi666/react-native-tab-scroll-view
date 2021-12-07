@@ -12,7 +12,7 @@
 
 
 ## Demo
-<img src="https://github.com/jianglingzhi666/react-native-tab-scroll-view/blob/main/Image/image1.gif" width="150" height="333"/>
+<img src="https://github.com/jianglingzhi666/react-native-tab-scroll-view/blob/main/Image/image1.gif" width="225" height="499"/>
 
 
 ## 开始
