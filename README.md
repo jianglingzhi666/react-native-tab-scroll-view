@@ -154,7 +154,7 @@ export default class Home extends React.Component<any, any> {
 
 </br>
 
-**`renderTabBar`**
+**`renderTabBar`**（此方法与`renderHeader`二选一实现一个即可）
 
 </br>
 
