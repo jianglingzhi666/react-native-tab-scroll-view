@@ -12,6 +12,7 @@ interface TabScrollViewProps
 
 export default class Fragment extends React.Component<TabScrollViewProps, any> {
   public scrollRef = createRef<ScrollView>();
+  public offsetY: number = 0;
   constructor(props: any) {
     super(props);
   }
@@ -25,7 +26,9 @@ export default class Fragment extends React.Component<TabScrollViewProps, any> {
       position.addListener((data: {value: number}) => {
         if (!this.props.isActive) {
           if (stopHeight < data.value) {
-            fun(this.props.stopHeight);
+            if (this.offsetY < stopHeight) {
+              fun(this.props.stopHeight);
+            }
           } else {
             fun(data.value);
           }
@@ -56,7 +59,12 @@ export default class Fragment extends React.Component<TabScrollViewProps, any> {
               },
             },
           ],
-          {useNativeDriver: true},
+          {
+            useNativeDriver: true,
+            listener: (event: any) => {
+              this.offsetY = event.nativeEvent.contentOffset.y;
+            },
+          },
         )}>
         <View style={{width: '100%', height: headerHeight}} />
         {children}

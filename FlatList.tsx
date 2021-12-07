@@ -23,6 +23,7 @@ interface TabFlatListProps
 }
 export default class Flatlist extends React.Component<TabFlatListProps, any> {
   public flatListRef = createRef<FlatList>();
+  public offsetY: number = 0;
   constructor(props: any) {
     super(props);
   }
@@ -36,7 +37,9 @@ export default class Flatlist extends React.Component<TabFlatListProps, any> {
       position.addListener((data: {value: number}) => {
         if (!this.props.isActive) {
           if (stopHeight < data.value) {
-            fun(this.props.stopHeight);
+            if (this.offsetY < stopHeight) {
+              fun(this.props.stopHeight);
+            }
           } else {
             fun(data.value);
           }
@@ -73,7 +76,12 @@ export default class Flatlist extends React.Component<TabFlatListProps, any> {
                     },
                   },
                 ],
-                {useNativeDriver: true},
+                {
+                  useNativeDriver: true,
+                  listener: (event: any) => {
+                    this.offsetY = event.nativeEvent.contentOffset.y;
+                  },
+                },
               )
             : () => {}
         }
