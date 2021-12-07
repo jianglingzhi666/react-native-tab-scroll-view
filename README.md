@@ -24,8 +24,7 @@ export default class Home extends React.Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
-      activeIndex: 0,
-      refresh: false,
+      activeIndex: 0
     };
   }
   renderScene = (props: any) => {
