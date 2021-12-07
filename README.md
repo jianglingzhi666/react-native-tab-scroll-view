@@ -166,4 +166,4 @@ export default class Home extends React.Component<any, any> {
 
 </br>
 
-##其他Api请参考[react-native-tab-view](https://github.com/satya164/react-native-tab-view#readme)
+## 其他Api请参考 [react-native-tab-view](https://github.com/satya164/react-native-tab-view#readme)
