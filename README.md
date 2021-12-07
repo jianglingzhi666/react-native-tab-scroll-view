@@ -127,3 +127,39 @@ export default class Home extends React.Component<any, any> {
     );
   }
 }
+```
+## 接口参考
+
+</br>
+
+**headerHeight**
+
+`头部header高度`
+
+</br>
+
+**stopHeight**
+
+`头部header可上移距离`
+
+</br>
+
+**`renderHeader`**
+
+`props`等同于`react-native-tab-view`Api `renderTabBar`方法参数
+
+</br>
+
+`position` FlatList 或 ScrollView 滚动的位置
+
+</br>
+
+**`renderTabBar`**
+
+</br>
+
+与`renderHeader`参数一致,此方法用于自定义header滚动动画
+
+**`renderScene`**
+
+此方法必须返回的是本组件里的FlatList或ScrollView
