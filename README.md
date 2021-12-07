@@ -12,7 +12,7 @@
 
 
 ## Demo
-
+![Image text](https://github.com/jianglingzhi666/react-native-tab-scroll-view/blob/main/Image/image1.gif)
 
 ## 开始
 ```
