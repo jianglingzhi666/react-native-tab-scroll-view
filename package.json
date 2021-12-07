@@ -1,6 +1,6 @@
 
 {
-  "name": "react-native-tab-scroll-view",
+  "name": "react-native-tab-flatlist",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,7 +9,8 @@
   },
   "keywords": [
     "react-native",
-    "tab-scroll-view"
+    "tab-scroll-view",
+    "react-native-tab-flatlist"
   ],
   "author": "",
   "license": "",
