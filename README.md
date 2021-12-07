@@ -6,6 +6,8 @@
 ## 安装
 `使用前需要先安装`[react-native-tab-view](https://github.com/satya164/react-native-tab-view#readme) `与` [react-native-pager-view](https://github.com/callstack/react-native-pager-view)
 </br>
+</br>
+</br>
 `npm install react-native-tab-scroll-view --save`
 
 
