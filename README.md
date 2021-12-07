@@ -1,5 +1,5 @@
 
-# react-native-tab-scroll-view
+# react-native-tab-flatlist
 
 `ReactNative 跨平台实现TabView嵌套ScrollView滚动吸顶效果,采用react-native-tab-view+flatlist实现效果丝滑`
 
@@ -8,7 +8,7 @@
 </br>
 </br>
 </br>
-`npm install react-native-tab-scroll-view --save`
+`npm install react-native-tab-flatlist --save`
 
 
 ## Demo
