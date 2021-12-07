@@ -146,7 +146,7 @@ export default class Home extends React.Component<any, any> {
 
 **`renderHeader`**
 
-* `props`等同于`react-native-tab-view`Api `renderTabBar`方法参数
+* `props`等同于`react-native-tab-view` Api中 `renderTabBar`方法参数
 
 </br>
 
