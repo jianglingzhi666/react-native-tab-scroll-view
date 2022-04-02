@@ -30,6 +30,10 @@ export default class TabView extends React.Component<MyTabViewProps, any> {
       inputRange: [0, stopHeight, stopHeight + 1],
       outputRange: [0, -stopHeight, -stopHeight],
     });
+    const index = this.scollViewTop.interpolate({
+      inputRange: [stopHeight-2,stopHeight-1, stopHeight, stopHeight + 1],
+      outputRange: [1,1, 99, 99],
+    });
     return (
       <View style={{flex: 1, position: 'relative'}}>
         <RNTabView
@@ -44,7 +48,7 @@ export default class TabView extends React.Component<MyTabViewProps, any> {
                     position: 'absolute',
                     top: 0,
                     left: 0,
-                    zIndex: 2,
+                    zIndex: index,
                     backgroundColor: 'yellow',
                     transform: [{translateY: positionY}],
                   }}>

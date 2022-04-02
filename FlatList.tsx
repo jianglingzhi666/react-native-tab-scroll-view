@@ -60,7 +60,7 @@ export default class Flatlist extends React.Component<TabFlatListProps, any> {
       <Animated.FlatList
         {...other}
         ListHeaderComponent={() => (
-          <View style={{width: '100%', height: headerHeight}} />
+          <View style={{width: '100%', height: headerHeight,opacity:0}} />
         )}
         showsVerticalScrollIndicator={false}
         ref={this.flatListRef}

@@ -66,7 +66,7 @@ export default class Fragment extends React.Component<TabScrollViewProps, any> {
             },
           },
         )}>
-        <View style={{width: '100%', height: headerHeight}} />
+        <View style={{width: '100%', height: headerHeight,opacity:0}} />
         {children}
       </Animated.ScrollView>
     );
