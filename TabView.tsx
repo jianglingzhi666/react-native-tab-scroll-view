@@ -32,7 +32,7 @@ export default class TabView extends React.Component<MyTabViewProps, any> {
     });
     const index = this.scollViewTop.interpolate({
       inputRange: [stopHeight-2,stopHeight-1, stopHeight, stopHeight + 1],
-      outputRange: [1,1, 99, 99],
+      outputRange: [0,0, 99, 99],
     });
     return (
       <View style={{flex: 1, position: 'relative'}}>
